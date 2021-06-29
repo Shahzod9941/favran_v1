@@ -5,13 +5,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/header.css">
     <title>Grid CSS</title>
 </head>
 
 <body>
-    <div class="grid-wrapper">
-        <div class="grid-items yellow">
+<header>
+        <!--     <div class="top-bar">
+            <div class="container">
+                <div class="header-contacts">
+                    <i class="fa fa-envelope color"></i> &nbsp; <a href="mailto:favran@info.com"
+                        class="header-email">favran@info.com</a>
+                    &nbsp;&nbsp;
+                    <i class="fa fa-phone color"></i> &nbsp;<a href="tel:+992933099941" class="header-phone">+992 93 309
+                        99 41</a>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Container -->
+        <!-- <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4">
+                    
+                    <div class="logo">
+                        <h1><a href="index.html">favran.tj</a></h1>
+                    </div>
+                </div>
+                <div class="col-md-6 col-md-offset-2 col-sm-5 col-sm-offset-3 hidden-xs">
+                    
+                    <div class="header-search">
+                        <form>
+                            
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Type Something">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-color" type="button">Search</button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="header">
+            <div class="header-col header-brand">
+                <img src="https://text2image.com/user_images/202106/text2image_Z7938585_20210628_143531.png" alt="">
+            </div>
+            <div class="header-col header-saerch">
+                <div class="search-wrapper">
+                    <!-- <div><i class="fa fa-menu"></i></div> -->
+                    <div class="search">
+                        <input type="text" class="searchTerm" placeholder="Поиск...">
+                        <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="header-col header-phone">
+                <div><i class="fas fa-phone"></i><span class="header__phone"><a href="tel:+992933099941">+992-93-309-99-41</a></span></div>
+            </div>
+        </div>
+        <div class="header-navbar navbar-menu">
+            <button class="navbar-menu-button" id="btnNav" type="submit"><i class="fa fa-bars"></i> </button>
+        </div>
+        <nav class="nav">
+            <div class="nav__links">
+                <a href="https://www.google.com" class="nav__link"><i class="fas fa-hamburger"></i>еда</a>
+                <a href="#" class="nav__link"><i class="fas fa-coffee"></i>Кафе и рестораны</a>
+                <a href="#" class="nav__link"><i class="fas fa-desktop"></i>орг. техника</a>
+                <a href="#" class="nav__link"><i class="fas fa-tshirt"></i>Одежда</a>
+                <a href="#" class="nav__link">бытовая техника</a>
+                <a href="#" class="nav__link"><i class="fa fa-home"> </i> часы и аксессуары</a>
+                <a href="#" class="nav__link"><i class="fa fa-home"> </i> мобилные телефоны</a>
+                <a href="#" class="nav__link"><i class="fa fa-home"> </i> книги</a>
+                <a href="#" class="nav__link"><i class="fa fa-home"> </i> другое</a>
+            </div>
+            <div class="nav__overlay">
+    
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="product-wrapper">
+        <div class="product-item yellow">
             <div class="card">
                 <a href="#">
                     <div class="image">
@@ -26,48 +107,51 @@
                     </div>
                 </a>
             </div>
-            
+
         </div>
-        <div class="grid-items blue">
-            <div class="card">
-                <a href="#">
-                <div class="image">
-                    <img src="https://sc04.alicdn.com/kf/HTB11zNjzkKWBuNjy1zjq6AOypXa8.jpg" alt="">
-                </div>
-                <div class="card-details">
-                    <div class="product-name" title="Модная мужская футболка с 3D принтом">Модная мужская футболка с 3D принтом</div>
-                    <div class="product-price">
-                        <span class="old-price">200 c.</span>
-                        <span class="new-price"><s>230 c.</s></span>
-                    </div>
-                </div>
-                </a>
-            </div>
-        </div>
-        <div class="grid-items red">
-            <div class="card">
-                <a href="#">
-                <div class="image">
-                    <img src="https://ayelinta.com/wp-content/uploads/2016/12/vorotnik-12.jpg" alt="">
-                </div>
-                <div class="card-details">
-                    <div class="product-name" title="Футболка весна-лето">Футболка весна-лето</div>
-                    <div class="product-price">
-                        <span class="old-price">119 c.</span>
-                        <span class="new-price"><s>250 c.</s></span>
-                    </div>
-                </div>
-                </a>
-            </div>
-        </div>
-           <div class="grid-items grey">
+        <div class="product-item blue">
             <div class="card">
                 <a href="#">
                     <div class="image">
-                        <img src="https://lh3.googleusercontent.com/proxy/e_fyN-VZUbTEdqvOACuHC-w2K_HdXyAsZ77QGwJ5tgfwMsRJIk4oFtrVngVSgJkeviGqaz7Zc2jZoHVykPiyLtJLYo2Cbn-8f9WRS9EUYhnL5rEbeFNeZZqHRjMwzO9j" alt="">
+                        <img src="https://sc04.alicdn.com/kf/HTB11zNjzkKWBuNjy1zjq6AOypXa8.jpg" alt="">
                     </div>
                     <div class="card-details">
-                        <div class="product-name" title="Футболка с воротниками EO19_Elements">Футболка с воротниками EO19_Elements</div>
+                        <div class="product-name" title="Модная мужская футболка с 3D принтом">Модная мужская футболка с
+                            3D принтом</div>
+                        <div class="product-price">
+                            <span class="old-price">200 c.</span>
+                            <span class="new-price"><s>230 c.</s></span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="product-item red">
+            <div class="card">
+                <a href="#">
+                    <div class="image">
+                        <img src="https://ayelinta.com/wp-content/uploads/2016/12/vorotnik-12.jpg" alt="">
+                    </div>
+                    <div class="card-details">
+                        <div class="product-name" title="Футболка весна-лето">Футболка весна-лето</div>
+                        <div class="product-price">
+                            <span class="old-price">119 c.</span>
+                            <span class="new-price"><s>250 c.</s></span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="product-item grey">
+            <div class="card">
+                <a href="#">
+                    <div class="image">
+                        <img src="https://shop-cdn1.vigbo.tech/shops/41651/products/9439163/images/3-eed149e43fc5e6132537e18e828b2af4.jpg"
+                            alt="">
+                    </div>
+                    <div class="card-details">
+                        <div class="product-name" title="Футболка с воротниками EO19_Elements">Футболка с воротниками
+                            EO19_Elements</div>
                         <div class="product-price">
                             <span class="old-price">200 c.</span>
                             <span class="new-price"><s>240 c.</s></span>
@@ -75,12 +159,13 @@
                     </div>
                 </a>
             </div>
-           </div>
-        <div class="grid-items aqua">
+        </div>
+        <div class="product-item aqua">
             <div class="card">
                 <a href="#">
                     <div class="image">
-                        <img src="https://img.shopsy.com.ua/i/p/b2/09/b2097203119c2e137ddf35a93750fd80_medium.jpg" alt="">
+                        <img src="https://img.shopsy.com.ua/i/p/b2/09/b2097203119c2e137ddf35a93750fd80_medium.jpg"
+                            alt="">
                     </div>
                     <div class="card-details">
                         <div class="product-name" title="Кожанные мужские футболки">Кожанные мужские футболки</div>
@@ -92,11 +177,12 @@
                 </a>
             </div>
         </div>
-        <div class="grid-items five">
+        <div class="product-item five">
             <div class="card">
                 <a href="#">
                     <div class="image">
-                        <img src="https://futbolkipromo.ru/images/hanes/G137/Muzhskie-polo-Hanes-Top-Polo-with-Pocket-serie.jpg" alt="">
+                        <img src="https://futbolkipromo.ru/images/hanes/G137/Muzhskie-polo-Hanes-Top-Polo-with-Pocket-serie.jpg"
+                            alt="">
                     </div>
                     <div class="card-details">
                         <div class="product-name" title="Polo футболка с карманом">Polo футболка с карманом</div>
@@ -108,11 +194,12 @@
                 </a>
             </div>
         </div>
-        <div class="grid-items six">
+        <div class="product-item six">
             <div class="card">
                 <a href="#">
                     <div class="image">
-                        <img src="https://besplatka.ua/aws/746x-/26/79/93/22/muzhskie-futbolki-lacoste-diesel-ck-armani-kenzo-givenchy-hilfiger-photo-c15a.jpg" alt="">
+                        <img src="https://besplatka.ua/aws/746x-/26/79/93/22/muzhskie-futbolki-lacoste-diesel-ck-armani-kenzo-givenchy-hilfiger-photo-c15a.jpg"
+                            alt="">
                     </div>
                     <div class="card-details">
                         <div class="product-name" title="Мужская футболка Lacoste">Мужская футболка Lacoste</div>
@@ -124,7 +211,7 @@
                 </a>
             </div>
         </div>
-        <div class="grid-items seven">
+        <div class="product-item seven">
             <div class="card">
                 <a href="#">
                     <div class="image">
@@ -140,14 +227,16 @@
                 </a>
             </div>
         </div>
-        <div class="grid-items eight">
+        <div class="product-item eight">
             <div class="card">
                 <a href="#">
                     <div class="image">
-                        <img src="https://manrule.ru/images/article/croppedtop/290-435/2019/11/muzhskie-futbolki-raznyh-cvetov.jpg" alt="">
+                        <img src="https://manrule.ru/images/article/croppedtop/290-435/2019/11/muzhskie-futbolki-raznyh-cvetov.jpg"
+                            alt="">
                     </div>
                     <div class="card-details">
-                        <div class="product-name" title="Мужские футболки разных цветов">Мужские футболки разных цветов</div>
+                        <div class="product-name" title="Мужские футболки разных цветов">Мужские футболки разных цветов
+                        </div>
                         <div class="product-price">
                             <span class="old-price">2000 c.</span>
                             <span class="new-price"><s>2300 c.</s></span>
@@ -156,7 +245,7 @@
                 </a>
             </div>
         </div>
-        <div class="grid-items nine">
+        <div class="product-item nine">
             <div class="card">
                 <a href="#">
                     <div class="image">
@@ -173,6 +262,48 @@
             </div>
         </div>
     </div>
+
+    <footer class="footer ">
+        <div class="footer__container">
+            <div class="footer__row">
+                <div class="footer-col">
+                    <h4>favran.tj</h4>
+                    <ul>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Обратная связь</a></li>
+                        <li><a href="#">Пользовательское соглащение</a></li>
+                        <li><a href="#">Помощь...</a></li>
+                    </ul>
+                </div>
+  
+                <div class="footer-col">
+                    <h4>Маркет</h4>
+                    <ul>
+                        <li><a href="#">Магазины</a></li>
+                        <li><a href="#">Вход</a></li>
+                        <li><a href="#">Сотрудничество</a></li>
+                    </ul>
+                </div>
+  
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-map-marker-alt"> </i> Душанбе, С.Шерози 29</a></li>
+                        <li><a href="#"><i class="fas fa-phone-alt"></i> +992-93-309-99-41</a></li>
+                        <li><a href="#"><i class="far fa-envelope"></i> favran@info.com</a></li>
+                    </ul><br>
+                    <div class="footer__social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+  
+                    </div>
+                </div>
+  
+            </div>
+        </div>
+    </footer>
     <script src="./js/app.js"></script>
 </body>
 
