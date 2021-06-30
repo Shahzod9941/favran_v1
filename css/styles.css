@@ -194,6 +194,25 @@ body{
 /* SLIDER */
 /* ======================================================= */
 
+.home-banner{
+    width: 100%;
+    padding: 5px 15px;
+    margin: 15px auto;
+}
+.swiper-banner {
+    margin: 15px auto;
+    height: 450px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .swiper-banner img{
+      width: 100%;
+      height: 100%;
+  }
+  .banner-arrows{
+      display: none;
+  }
+  
  .swiper-container {
     width: 100%;
     margin: 20px 0;
@@ -537,10 +556,10 @@ body{
         grid-template-columns:  1fr 2fr;
     }
     .header-brand{
-        padding-left: 110px;
+        padding-left: 90px;
     }
     .header-brand img{
-        width: 100px;
+        width: 80px;
         height: 60px;
     }
     .header-phone{
@@ -584,45 +603,3 @@ body{
 }
 
 
-.home-banner{
-    width: 100%;
-    padding: 5px 15px;
-    margin: 15px auto;
-}
-.swiper-banner {
-    margin: 15px auto;
-    height: 450px;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-  .swiper-banner img{
-      width: 100%;
-      height: 100%;
-  }
-  .banner-arrows{
-      display: none;
-  }
-  
-  /* @media (min-width: 576px) {
-    .home-banner {
-      max-width: 540px;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .home-banner {
-      max-width: 720px;
-    }
-  }
-  
-  @media (min-width: 992px) {
-    .home-banner {
-      max-width: 960px;
-    }
-  }
-  
-  @media (min-width: 1200px) {
-    .home-banner {
-      max-width: 1140px;
-    }
-  } */
